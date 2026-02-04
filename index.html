@@ -1315,9 +1315,6 @@
                 
                 <!-- Quick Actions -->
                 <div class="quick-actions">
-                    <button class="quick-action-btn" id="quickDeposit">
-                        <i class="fas fa-money-bill-wave"></i> Quick Deposit
-                    </button>
                     <button class="quick-action-btn" id="quickWithdraw">
                         <i class="fas fa-file-export"></i> Quick Withdraw
                     </button>
@@ -2890,11 +2887,6 @@
                 });
                 
                 // Quick actions
-                document.getElementById('quickDeposit').addEventListener('click', () => {
-                    document.querySelector('[data-tab="liquidity"]').click();
-                    document.getElementById('amount').focus();
-                });
-                
                 document.getElementById('quickTrade').addEventListener('click', () => {
                     document.querySelector('[data-tab="predict"]').click();
                     if (!state.selectedAsset) {
